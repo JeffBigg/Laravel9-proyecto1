@@ -11,9 +11,9 @@
 <body>
     <ul>
         <li><a href="<?= route('home') ?>">Home</a></li>
-        <li><a href="<?= route('blog') ?>"></a>Blog</li>
-        <li><a href="<?= route('about') ?>"></a>About</li>
-        <li><a href="<?= route('contact') ?>"></a>Contact</li>
+        <li><a href="<?= route('blog') ?>">Blog</a></li>
+        <li><a href="<?= route('about') ?>">About</a></li>
+        <li><a href="<?= route('contact') ?>">Contact</a></li>
     </ul>
     <h1>Contacto</h1>
 </body>
