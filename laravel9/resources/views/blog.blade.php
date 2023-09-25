@@ -9,6 +9,12 @@
 </head>
 
 <body>
+    <ul>
+        <li><a href="<?= route('home') ?>">Home</a></li>
+        <li><a href="<?= route('blog') ?>"></a>Blog</li>
+        <li><a href="<?= route('about') ?>"></a>About</li>
+        <li><a href="<?= route('contact') ?>"></a>Contact</li>
+    </ul>
     <h1>Blog</h1>
 </body>
 
