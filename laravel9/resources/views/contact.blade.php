@@ -1,6 +1,3 @@
-@extends('layouts.app')
-@section('title', 'contact')
-@section('meta-description', 'contact')
-@section('content')
-    <h1>Contacto</h1>
-@endsection
+<x-layouts.app title="contact" meta-description="contact meta description">
+    <h1>contact</h1>
+</x-layouts.app>
