@@ -26,7 +26,10 @@ class PostController extends Controller
         $post = new Post;
         $post->title = $request->input('title');
         $post->save();
-
         return to_route('posts.index');
+    }
+    public function edit(Post $post)
+    {
+        return view('posts.edit', ['post' => $post]);
     }
 }
