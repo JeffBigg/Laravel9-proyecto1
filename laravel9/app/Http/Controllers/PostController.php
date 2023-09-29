@@ -32,4 +32,15 @@ class PostController extends Controller
     {
         return view('posts.edit', ['post' => $post]);
     }
+    public function update(Request $request, Post $post)
+    {
+        $post->title = $request->input('title');
+        $post->save();
+        return to_route('posts.index', $post);
+    }
+    public function destroy(Post $post)
+    {
+        $post->delete();
+        return to_route('posts.index')->with('status', 'post eliminado');
+    }
 }
